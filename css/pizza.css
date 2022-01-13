@@ -6,6 +6,7 @@ body {
 h1, h3 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #fff;
+    text-align: center;
 }
 
 div {
@@ -19,26 +20,32 @@ div {
 }
 
 #frmMenu {
-    width: 400px;
-    height: 200px;
+    width: 600px;
+    height: 400px;
 }
 
 #totalPrice {
     width: 200px;
     height: 190px;
-    margin: 0 auto;
+    margin: 0px auto;
     float: right;
 }
 
 .left {
     width: 200px;
-    height: 200px;
+    height: 300px;
+    float: left;
+}
+
+.center {
+    width: 200px;
+    height: 300px;
     float: left;
 }
 
 .right {
     width: 200px;
-    height: 200px;
+    height: 300px;
     float: right;
 }
 
@@ -47,6 +54,7 @@ div {
     height: 190px;
     margin: 0px auto;
     float: left;
+    text-align: center;
 }
 
 #cart {
@@ -59,5 +67,7 @@ div {
 #btnOrder {
     margin: 10px 0px 0px 100px;
     width: 100px;
-    height: 40px;
+    height: 50px;
+    display: block;
+    margin: 25px auto;
 }

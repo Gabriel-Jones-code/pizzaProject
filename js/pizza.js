@@ -38,12 +38,21 @@ getTopping(runningTotal,text1);
 function getTopping(runningTotal,text1) {
     var toppingTotal = 0;
     var selectedTopping = [];
+    var selectedVege = [];
     var toppingArray = document.getElementsByClassName('toppings');
+    var vegeArray = document.getElementsByClassName('veges');
     for (var j = 0; j < toppingArray.length; j++){
         if (toppingArray[j].checked) {
             selectedTopping.push(toppingArray[j].value);
             console.log("selected topping item: ("+toppingArray[j].value+")");
             text1 = text1+toppingArray[j].value+"<br>";
+        }
+    }
+    for (var z = 0; z < vegeArray.length; z++) {
+        if (vegeArray[z].checked) {
+            selectedVege.push(vegeArray[z].value+"<br>");
+            console.log("selected vege item: ("+vegeArray+")");
+            text1 = text1+vegeArray[z].value+"<br>";
         }
     }
     var toppingCount = selectedTopping.length;
